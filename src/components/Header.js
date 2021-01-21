@@ -4,8 +4,8 @@ function Header(props) {
     const { nasaInfo } = props
 
     return (
-        <header>
-            <h1>Placeholder for curl- nasaInfo.name -curl</h1>
+        <header className="headerDate">
+            <h1>Nasa Photo of the Day : {nasaInfo.date}</h1>
         </header>
     )
 }

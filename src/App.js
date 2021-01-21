@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import "./App.css";
 import axios from "axios";
 import Header from "./components/Header"
+import Image from "./components/Image"
 
 function App() {
   const [nasaInfo, setNasaInfo] = useState({})
@@ -12,12 +13,12 @@ function App() {
     }).catch((res) =>{
       console.log(res)
     })},[])
+
   return (
     <div className="App">
       <Header nasaInfo = {nasaInfo}/>
-      <p>
-       <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+      <Image nasaInfo = {nasaInfo} />
+      <p className="description">{nasaInfo.explanation}</p>
     </div>
   );
 }

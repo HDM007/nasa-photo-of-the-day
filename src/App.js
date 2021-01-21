@@ -19,6 +19,7 @@ function App() {
       <Header nasaInfo = {nasaInfo}/>
       <Image nasaInfo = {nasaInfo} />
       <p className="description">{nasaInfo.explanation}</p>
+      {/* initial for styled components pull */}
     </div>
   );
 }

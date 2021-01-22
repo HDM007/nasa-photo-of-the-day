@@ -1,19 +1,19 @@
 import React from "react";
 import styled from 'styled-components';
 
-const Wrapper = styled.header`
-  background-color: mistyrose;
+const Wrapper = styled.div`
   font-size: 0.5rem;
 `;
 
-function Header(props) {
+
+function Placard(props) {
     const { nasaInfo } = props
 
     return (
         <Wrapper>
-            <h1>Nasa Photo of the Day : {nasaInfo.date}</h1>
+            <p>{nasaInfo.explanation}</p>
         </Wrapper>
     )
 }
 
-export default Header;
+export default Placard;

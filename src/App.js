@@ -3,6 +3,7 @@ import "./App.css";
 import axios from "axios";
 import Header from "./components/Header"
 import Image from "./components/Image"
+import Placard from "./components/Placard"
 
 function App() {
   const [nasaInfo, setNasaInfo] = useState({})
@@ -18,7 +19,7 @@ function App() {
     <div className="App">
       <Header nasaInfo = {nasaInfo}/>
       <Image nasaInfo = {nasaInfo} />
-      <p className="description">{nasaInfo.explanation}</p>
+      <Placard nasaInfo = {nasaInfo} />
       {/* initial for styled components pull */}
     </div>
   );
